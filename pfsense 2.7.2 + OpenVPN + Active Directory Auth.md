@@ -37,7 +37,7 @@
 **Certificate Attributes**
 **Certificate Type:** `Server Certificate`
 **Alternative Names:** `FQDN or Hostname`
-## 3 - Agregar servidor de autenticación `Active directory`
+## 3 - Agregar servidor de autenticaciÃ³n `Active directory`
 ---
 + **System/User Manager/Authentication Servers/Add**
 ***Server Settings***
@@ -51,9 +51,10 @@
 **Server Timeout** `default`
 **Search scope:** `Entire Subtree`
 **Base DN:** `DC=metunas,DC=co,DC=cu`
-**Authentication containers:** `CN=Users,DC=metunas,DC=co,DC=cu` `(Especificar todos los contenedores de usuarios)`
+**Authentication containers:** `CN=Users,DC=metunas,DC=co,DC=cu` : `(Especificar todos los contenedores de usuarios)`
 ***Example: CN=Users;DC=example,DC=com or OU=Staff;OU=Freelancers***
 ***Extended query***
+**Query:**`memberOf=CN=Users_VPN,OU=Grupos,DC=metunas,DC=co,DC=cu` : `(solo usuarios miembros de 'Users_VPN')`
 **Enable extended query:** `[] Enable extended query`
 **Bind anonymous:** `[] Use anonymous binds to resolve distinguished names`
 **Bind credentials:** `Usuario con acceso a consultas (se requiere para las consultas a AD)`
@@ -61,7 +62,7 @@
 **User naming attribute:** `samAccountName`
 **Group naming attribute:** `cn`
 **Group member attribute:** `memberOf`
-## 4 - Diagnóstico de autenticación
+## 4 - DiagnÃ³stico de autenticaciÃ³n
 ---
 + **Diagnostics/Authentication**
 **Authentication Server:** ` ActiveDirectory_Auth`
@@ -143,7 +144,7 @@
 + **Instalar e importar el archivo antes guardado**
 + **Establecer un nombre al perfil**
 + **escribir usuario de AD**
-+ **Guardar contraseña**
++ **Guardar contraseÃ±a**
 + **Conectar**
 
 
